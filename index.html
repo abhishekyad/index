@@ -54,16 +54,18 @@
     }
 
     /* Hero */
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-size: 100%;
-      background-position: center;
-      text-align: center;
-      padding: 20px;
-    }
+.hero {
+min-height: 100vh; /* ensures one full screen but prevents weird stretching */
+height: auto; /* avoids forced height causing repetition on mobile */
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; /* prevents background from repeating */
+text-align: center;
+padding: 20px;
+}
     .hero h1 {
       font-size: 32px;
       font-family: "Times New Roman";
